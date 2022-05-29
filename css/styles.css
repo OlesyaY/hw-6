@@ -512,6 +512,10 @@ ul {
     border: unset;
 }
 
+.form-btn {
+    text-align: center;
+}
+
 
 .btn {
     padding: 6px 22px;
@@ -758,6 +762,54 @@ ul {
     fill: #FFFFFF;
 }
 
+.footer-submit {
+    margin-left: 93px;
+    width: 100%;
+}
+
+.footer-btn {
+    position: relative;
+    margin-left: 12px;
+    width: 200px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.87;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 29px;
+    border: unset;
+}
+
+
+.footer-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: #FFFFFF;
+
+}
+
+.footer-form {
+    display: flex;
+
+}
+
+.fotter-mail {
+
+    width: 100%;
+    max-width: 358px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    background-color: transparent;
+
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -788,16 +840,23 @@ ul {
     min-height: 581px;
     min-width: 528px;
     background-color: #FFFFFF;
+    padding: 40px;
 }
 
 
 .close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 8px;
     margin: 0px;
     padding: 0px;
     border: 0px;
+    cursor: pointer;
+}
+
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
+    fill: var(--accent-color);
 }
 
 .close-icon {
@@ -805,7 +864,131 @@ ul {
     height: 20px;
     fill: black;
     background-color: #FFFFFF;
-    border: 1px solid;
-    border-color: black;
     border-radius: 50%;
+}
+
+.form-title {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 28px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.modal-form .form-group:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.form-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group:hover .form-icon,
+.form-group:focus .form-icon {
+    fill: var(--accent-color);
+}
+
+.form-label {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.coment {
+    padding: 12px 16px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    resize: none;
+
+}
+
+
+.form-policy-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 1px;
+    margin-bottom: 30px;
+}
+
+.form-policy-description-link {
+    color: var(--accent-color);
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    outline: 2px solid #212121;
+    outline-offset: -2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox-icon {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.custom-checkbox {
+    background-color: #2196F3;
+    outline: 2px solid #2196F3;
+}
+
+.checkbox:checked+.custom-checkbox .custom-checkbox-icon {
+    opacity: 1;
+}
+
+.form-policy-description {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
 }
