@@ -795,7 +795,6 @@ ul {
 
 .fotter-mail {
 
-    width: 100%;
     width: 358px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -849,6 +848,7 @@ ul {
     border: 0px;
     border-radius: 50%;
     width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
