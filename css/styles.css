@@ -712,8 +712,6 @@ ul {
 
 .join-caption {
     margin-bottom: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -764,13 +762,13 @@ ul {
 
 .footer-submit {
     margin-left: 93px;
-    width: 100%;
+
 }
 
 .footer-btn {
-    position: relative;
+    display: flex;
+    align-items: center;
     margin-left: 12px;
-    width: 200px;
     text-align: left;
     font-weight: 700;
     font-size: 16px;
@@ -785,9 +783,7 @@ ul {
 
 
 .footer-icon {
-    position: absolute;
-    top: 13px;
-    right: 28px;
+    margin-left: 10px;
     fill: #FFFFFF;
 
 }
@@ -800,7 +796,7 @@ ul {
 .fotter-mail {
 
     width: 100%;
-    max-width: 358px;
+    width: 358px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -851,6 +847,8 @@ ul {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    border-radius: 50%;
+    width: 20px;
     cursor: pointer;
 }
 
@@ -860,11 +858,10 @@ ul {
 }
 
 .close-icon {
-    width: 20px;
-    height: 20px;
+
     fill: black;
-    background-color: #FFFFFF;
-    border-radius: 50%;
+    background-color: transparent;
+
 }
 
 .form-title {
@@ -876,13 +873,13 @@ ul {
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     color: #212121;
 }
 
 .form-group {
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .form-group {
@@ -895,6 +892,8 @@ ul {
 
 .form-icon {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     bottom: 15px;
     left: 10px;
     fill: #212121;
@@ -915,6 +914,10 @@ ul {
     letter-spacing: 0.01em;
     color: #757575;
     margin-bottom: 4px;
+}
+
+.form-wrapper {
+    position: relative;
 }
 
 .form-input {
@@ -975,6 +978,11 @@ ul {
 
 .checkbox:checked+.custom-checkbox {
     background-color: #2196F3;
+    outline: 2px solid #2196F3;
+}
+
+.checkbox:focus+.custom-checkbox {
+    border-color: #2196F3;
     outline: 2px solid #2196F3;
 }
 
